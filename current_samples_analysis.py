@@ -1,0 +1,16 @@
+current_samples = [3, 3, 5, 4, 10, 11, 12]
+def find_range_and_count(current_samples):
+    temp=set(current_samples)
+    sample_range_and_count=set()
+    for i in current_samples:
+        range_length=0
+        if i-1 not in temp:
+            sample_count=0
+            start_of_range=i
+            while (i+range_length in current_samples):
+                sample_count+=current_samples.count(i+range_length)
+                range_length+=1
+            end_of_range=i+range_length
+        sample_range_and_count.add((start_of_range,end_of_range-1,sample_count))
+    return sample_range_and_count
+  
