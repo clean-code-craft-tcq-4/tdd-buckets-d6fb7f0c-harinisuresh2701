@@ -13,4 +13,20 @@ def find_range_and_count(current_samples):
             end_of_range=i+range_length
         sample_range_and_count.add((start_of_range,end_of_range-1,sample_count))
     return sample_range_and_count
-  
+
+def print_in_csv_format(input_data):
+    csv_format = str((str(input_data[0])+"-"+str(input_data[1])+", "+str(input_data[2])))
+    return csv_format
+
+def print_on_console(message):
+    print(message)
+       
+def main():        
+    x = (find_range_and_count(current_samples))
+    output = ""
+    for ele in x:
+        output+=(print_in_csv_format(ele))+"\n"        
+    print_on_console(output)
+
+if __name__== "__main__" :
+    main()
