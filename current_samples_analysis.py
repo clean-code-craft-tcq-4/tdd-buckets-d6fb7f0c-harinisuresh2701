@@ -1,4 +1,3 @@
-current_samples = [3, 3, 5, 4, 10, 11, 12]
 def find_range_and_count(current_samples):
     temp=set(current_samples)
     sample_range_and_count=set()
@@ -22,11 +21,12 @@ def print_on_console(message):
     print(message)
        
 def main():        
+    current_samples = [3, 3, 5, 4, 10, 11, 12]
     x = (find_range_and_count(current_samples))
     output = ""
     for ele in x:
-        output+=(print_in_csv_format(ele))+"\n"        
-    print_on_console(output)
+        output+=(print_in_csv_format(ele)) + "\n"       
+    print_on_console(output[:-1])
 
 if __name__== "__main__" :
     main()
