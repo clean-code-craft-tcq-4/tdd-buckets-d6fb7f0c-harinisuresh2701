@@ -1,3 +1,4 @@
+import current_sensing
 def find_range_count(current_samples):
     temp=set(current_samples)
     sample_range_count=set()
@@ -21,7 +22,7 @@ def print_on_console(message):
     print(message)
        
 def main():        
-    current_samples = [3, 3, 5, 4, 10, 11, 12]
+    current_samples = current_sensing.sample_to_amp_conversion()
     x = (find_range_count(current_samples))
     output = ""
     for ele in x:
