@@ -19,3 +19,11 @@ def csv_formatter(input_data):
 
 def print_on_console(message):
     print(message)
+
+def analysis_of_samples():        
+    current_samples = current_sensing.sample_to_amp_conversion()
+    x = (find_range_count(current_samples))
+    output = ""
+    for ele in x:
+        output+=(csv_formatter(ele)) + "\n"       
+    print_on_console(output[:-1])
