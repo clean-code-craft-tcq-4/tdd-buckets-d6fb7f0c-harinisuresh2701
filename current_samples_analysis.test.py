@@ -1,5 +1,6 @@
 import unittest
 import current_samples_analysis
+import current_sensing
 
 class TypewiseTest(unittest.TestCase):
   sample_set = [3, 3, 5, 4, 10, 11, 12]
