@@ -1,0 +1,21 @@
+Current Samples Analyser
+
+1. Create a counter function to count the number of elements in a range:
+———————————————
+find_range_count(current_samples)
+———————————————
+This method takes an array of unsorted current samples as an input.
+Ex : [3, 3, 5, 4, 10, 11, 12]
+This converts the current samples into set data type.
+Ex : (3, 4, 5, 10, 11, 12)
+It finds consecutive samples and returns starting element of range, ending element of range and count of occurance in that range as nested list.
+Ex : [[3,10],[5,12],[4,3]]
+
+2. Create a function which can format a string into a csv format:
+———————————————
+csv_formatter(input_data)
+———————————————
+This method takes input data in the form of list of integers.
+Ex: [[3,10],[5,12],[4,3]]
+It returns a string in a csv format.
+Ex: "3 - 5, 4"
